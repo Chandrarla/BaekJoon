@@ -10,9 +10,9 @@ print(a / b)
 
 a, b = map(int, input().split())
 print(a + b, )
-print(a - b, sep='\n')
-print(a * b, sep='\n')
-print(a // b, sep='\n') #나눗셈 후 몫만 반환하는 연산자 '//'
+print(a - b)
+print(a * b)
+print(a // b) #나눗셈 후 몫만 반환하는 연산자 '//'
 print(a % b)
 
 id = input()
