@@ -35,17 +35,3 @@ for _ in range(20):
         creditSum += float(credit)
 
 print(sum/creditSum)
-
-rating = ['A+', 'A0', 'B+', 'B0', 'C+', 'C0', 'D+', 'D0', 'F']
-grade_list = [4.5, 4.0, 3.5, 3.0, 2.5, 2.0, 1.5, 1.0, 0]
-
-total_gpa = 0
-total_grade = 0
-for _ in range(20):
-    subject, gpa, grade = input().split()
-    gpa = float(gpa)        # 실수형으로 만들어준다 int 사용x b/c 예제에 3.0등으로 이루어짐
-    if grade != 'p':
-        total_gpa += gpa
-        total_grade += gpa * grade_list[rating.index(grade)]   # 학점 * 과목평점
-
-print('%.6f' % (total_grade / total_gpa))
